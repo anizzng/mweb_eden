@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/m_reset.css">
+  <link rel="stylesheet" href="css/m_style.css">
+  <link rel="stylesheet" href="css/m_common.css">
+  <link rel="stylesheet" href="css/m_dinning.css">
+  <title>HOTEL EDEN</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="navbar">
+      <div id="logo">
+        <a href="index.html"><img src="images/m_logo.png" alt=""></a>
+      </div>
+      <div class="bar_icon" onclick="openNav()">
+        <img src="images/menu.png" alt="">
+      </div>
+      <div id="mySidepanel" class="sidepanel">
+        <div class="toparea">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <div class="logincon">
+            <a href="m_login.html" class="login">로그인</a>
+            <a href="#" class="join" onclick="joinUs();">회원가입</a>
+          </div>
+          <a href="#" class="reserv">예약조회</a>
+        </div>
+        <div class="midlearea1">
+          <div class="roomreserv">
+            <a href="m_guest_room.html">객실예약</a>
+            <form>
+              <input type="text" name="search" class="searchicon">
+            </form>
+            <!-- <a href="" class="iconarea"></a> -->
+          </div>
+        </div>
+        <div class="midlearea2">
+          <ul>
+            <li><a href="m_introduce.html">호텔 에덴 소개</a></li>
+            <li><a href="m_dining.html">다이닝</a></li>
+            <li><a href="#">부대시설</a></li>
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">멤버십</a></li>
+          </ul>
+        </div>
+        <div class="gnb_foot">
+          <div class="botomarea1">
+            <div class="quick_site">
+              <a class="site_list" id="langOpt" onclick="langChose1()"><span>한국어</span></a>
+              <ul class="util_view lang_list">
+                <li><a href="#"><span>English</span></a></li>
+                <li><a href="#"><span>日本語</span></a></li>
+                <li><a href="#"><span>中文</span></a></li>
+              </ul>
+              <a class="site_list lang" onclick="langChose2()"><span>KRW</span></a>
+              <ul class="util_view lang_list">
+                <li><a href="#"><span>UAS(USD)</span></a></li>
+                <li><a href="#"><span>日本(JPY)</span></a></li>
+                <li><a href="#"><span>中國(CNY)</span></a></li> 
+              </ul>
+            </div>
+          </div>
+          <div class="botomarea2">
+            <a href="#"><span>호텔찾기</span></a>
+            <a href="m_introduce.html"><span>호텔에덴소개</span></a>
+            <a href="#"><span>고객센터</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="back_link">
+        <button type="button" onclick="history.back();"></button>
+      </div>
+      <div class="conWrap">
+        <div class="inner_h1">
+          <h1>다이닝</h1>
+        </div>
+        <div class="inner_Text">
+          <p>탁트인 도심의 전경을 바라보며 셰계 최고 수준의 셰프들이 직접 선보이는 다양한 요리를 즐기실 수 있습니다.
+          </p>
+        </div>
+        <div class="dining_option">
+          <strong class="option_title">ALL</strong>
+          <button type="button" id="selOpt" class="option_button" onclick="btnToggle();">
+            <span class="screen_out"> 타입목록</span>
+          </button>
+          <div class="dining_option_con">
+            <div class="input_chk">
+              <span class="input_item">
+                <input type="checkbox" id="check_type_all" class="input_checkbox" checked="checked">
+                <label for="check_type_all">all</label>
+              </span>
+              <span class="input_item">
+                <input type="checkbox" id="check_type_Restaurants" class="input_checkbox" checked="checked">
+                <label for="check_type_Restaurants">레스토랑</label>
+              </span>
+              <span class="input_item">
+                <input type="checkbox" id="check_type_Members" class="input_checkbox" checked="checked">
+                <label for="check_type_Members">멤버스 레스토랑</label>
+              </span>
+              <span class="input_item">
+                <input type="checkbox" id="check_type_Bar&Lounges" class="input_checkbox" checked="checked">
+                <label for="check_type_Bar&Lounges">바 & 라운지</label>
+              </span>
+              <span class="input_item">
+                <input type="checkbox" id="check_type_Bakery" class="input_checkbox" checked="checked">
+                <label for="check_type_Bakery">베이커리</label>
+              </span>
+            </div>
+          </div>
+        </div>
+        <ul class="dining_list">
+          <li class="dining">
+            <div class="slideImgList">
+              <div class="item01">
+                <div class="imgBox">
+                  <a href="#"><img src="images/dining_res_01.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="dining_content">
+                <div class="dining_inside">
+                  <h2>ON THE PLATE</h2>
+                  <p>유럽, 뉴욕 상해의 최신 Trend를 반영, 다섯가지 Station으로 구성된 Premium Buffet Restaurant</p>
+                </div>
+                <div class="dining_btn_con">
+                  <a href="#" class="dinindBtn"><span>전화하기</span></a>
+                  <a href="#" class="dinindBtn"><span>예약하기</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dining">
+            <div class="slideImgList">
+              <div class="item01">
+                <div class="imgBox">
+                  <a href="#"><img src="images/dining_res_02.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="dining_content">
+                <div class="dining_inside">
+                  <h2>LA SCALA</h2>
+                  <p>밀라노의 감성으로 이탈리아 본연의 맛을 추구하는 Italisn Gourmet Restaurant</p>
+                </div>
+                <div class="dining_btn_con">
+                  <a href="#" class="dinindBtn"><span>전화하기</span></a>
+                  <a href="#" class="dinindBtn"><span>예약하기</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dining">
+            <div class="slideImgList">
+              <div class="item01">
+                <div class="imgBox">
+                  <a href="#"><img src="images/dining_res_03.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="dining_content">
+                <div class="dining_inside">
+                  <h2>RAKU</h2>
+                  <p>모던한 분위기에서 즐기는 트렌디한 일식의 진수</p>
+                </div>
+                <div class="dining_btn_con">
+                  <a href="#" class="dinindBtn btnTel"><span>전화하기</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dining">
+            <div class="slideImgList">
+              <div class="item01">
+                <div class="imgBox">
+                  <a href="#"><img src="images/dining_res_04.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="dining_content">
+                <div class="dining_inside">
+                  <h2>IMPERIAL TREASURE</h2>
+                  <p>한국 최초로 선보이는 정통 광동식 Fine Dining Cuisine</p>
+                </div>
+                <div class="dining_btn_con">
+                  <a href="#" class="dinindBtn btnTel"><span>전화하기</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dining">
+            <div class="slideImgList">
+              <div class="item01">
+                <div class="imgBox">
+                  <a href="#"><img src="images/dining_res_05.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="dining_content">
+                <div class="dining_inside">
+                  <h2>RUBIK</h2>
+                  <p>색다른 공연을 만나는 라이브 뮤직 라운지</p>
+                </div>
+                <div class="dining_btn_con">
+                  <a href="#" class="dinindBtn btnTel"><span>전화하기</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dining">
+            <div class="slideImgList">
+              <div class="item01">
+                <div class="imgBox">
+                  <a href="#"><img src="images/dining_res_06.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="dining_content">
+                <div class="dining_inside">
+                  <h2>LOUNGE PARADISE</h2>
+                  <p>음악이 흐르는 로비라운지</p>
+                </div>
+                <div class="dining_btn_con">
+                  <a href="#" class="dinindBtn btnTel"><span>전화하기</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dining">
+            <div class="slideImgList">
+              <div class="item01">
+                <div class="imgBox">
+                  <a href="#"><img src="images/dining_res_07.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="dining_content">
+                <div class="dining_inside">
+                  <h2>GARDEN CAFE</h2>
+                  <p>유럽의 정취를 지닌 카페</p>
+                </div>
+                <div class="dining_btn_con">
+                  <a href="#" class="dinindBtn btnTel"><span>전화하기</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrap">
+        <h4>(주) 호텔에덴</h4>
+        <p>인천광역시 중구 영종해안남로 321길 186</p>
+        <p>Tel. <span>1833-8855</span> / E-mali. <span>ede3n@hotel.com</span></p>
+        <p>Copyright@HOTELEDEN Co. LTD. ALL rights reserved</p>
+        <div class="info">
+          <ul>
+            <li><a href="#">개인정보취급방침 &nbsp;|</a></li>
+            <li><a href="#">영상정보처리기기운영관리방침 &nbsp;| </a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/m_main.js"></script>
+  <script src="js/m_dining.js"></script>
+</body>
+
+</html>

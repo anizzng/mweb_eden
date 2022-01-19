@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/m_reset.css">
+  <link rel="stylesheet" href="css/m_style.css">
+  <link rel="stylesheet" href="css/m_introduce.css">
+  <title>HOTEL EDEN</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div id="logo">
+        <img src="images/m_logo.png" alt="">
+      </div>
+      <div class="bar_icon" onclick="openNav()">
+        <img src="images/menu.png" alt="">
+      </div>
+      <div id="mySidepanel" class="sidepanel">
+        <div class="toparea">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <div class="logincon">
+            <a href="" class="login">로그인</a>
+            <a href="" class="join">회원가입</a>
+          </div>
+          <a href="" class="reserv">예약조회</a>
+        </div>
+        <div class="midlearea1">
+          <div class="roomreserv">
+            <a href="">객실예약</a>
+            <form>
+              <input type="text" name="search" class="searchicon">
+            </form>
+            <!-- <a href="" class="iconarea"></a> -->
+          </div>
+        </div>
+        <div class="midlearea2">
+          <ul>
+            <li><a href="">호텔 에덴 소개</a></li>
+            <li><a href="">다이닝</a></li>
+            <li><a href="">부대시설</a></li>
+            <li><a href="">OFFERS</a></li>
+            <li><a href="">EVENTS</a></li>
+            <li><a href="">멤버십</a></li>
+          </ul>
+        </div>
+        <div class="gnb_foot">
+          <div class="botomarea1">
+            <div class="quick_site">
+              <a class="site_list" id="langOpt" onclick="langChose1()"><span>한국어</span></a>
+              <ul class="util_view lang_list">
+                <li><a href=""><span>English</span></a></li>
+                <li><a href=""><span>日本語</span></a></li>
+                <li><a href=""><span>中文</span></a></li>
+              </ul>
+              <a class="site_list lang" onclick="langChose2()"><span>KRW</span></a>
+              <ul class="util_view lang_list">
+                <li><a href=""><span>UAS(USD)</span></a></li>
+                <li><a href=""><span>日本(JPY)</span></a></li>
+                <li><a href=""><span>中國(CNY)</span></a></li> 
+              </ul>
+            </div>
+          </div>
+          <div class="botomarea2">
+            <a href=""><span>호텔찾기</span></a>
+            <a href=""><span>호텔에덴소개</span></a>
+            <a href=""><span>고객센터</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="back_link">
+        <button type="button"></button>
+      </div>
+      <div class="conWrap">
+        <div class="inner_h1">
+          <h1>호텔 에덴 소개</h1>
+        </div>
+        <div class="inner_Text">
+          <p>호텔 에덴은 한국의 아름다움을 현대적인 감각으로 풀어낸(235실)에서
+            서울의 파노라믹한 스카이라인과 환상적인 야경을 조망할 수 있으며
+            일몰과 일출을 한 자리에서 감상할 수 있는 호텔입니다.
+            <br>
+            <br>
+            미식가들ㅇ을 위한 천국이자 그자체가 '고메 호텔(gourmet hOTEL)'로, 멀티
+            미쉐린스타 셰프 '야닉 알레노(yannick alleno)'가 '스테이(stay)' 레스토랑
+            운영과
+            더불어 호텔 내 모든 식움료(Food and Beverage)에 대햐 총괄 디렉팅을
+            전담하여 웨딩에서부터 인룸다이닝 메뉴에 이르기까지 세계적인 스타 
+            셰프가 제안하는 맛과 스타일을 경험할 수 있습니다.
+            <br>
+            <br>
+            최고층에 위치하여 햇살 가득한 에메랄드빛 풀에서 도심 속 망중한을 
+            즐길 수 있는 호텔 수영장, 국내 최초로 선보이느 세계적인 프리미엄 스파
+            브랜드 에비앙(Evian)스파,
+            <br>
+            <br>
+            세계 최고층에 위차한 최첨단 시설의 연회장에서 섬세하고 격조 있는 
+            호텔 에덴만의 서비스가 펼쳐입니다.</p>
+        </div>
+        <div class="slideImgList">
+          <div class="item01">
+            <div class="imgBox">
+              <a href=""><img src="images/intro_rom01.jpg" alt=""></a>
+            </div>
+            <div class="content">
+              <h2>객실</h2>
+              <p class="sub_head">최고층 타워의 전 객실에서 서울의 환상적인 경관을 파노라믹뷰로 
+                조망할 수 있습니다.</p>
+              <p class="sub_text">
+                - 여유로운 면적의 최고급 객실<br>
+                - 세련미와 편안함이 어우러진 격조 높은 인테리어<br>
+                - 최상의 평온함을 위한 Super-premium Bedding System (Simmons사 공동 개발 )
+              </p>
+            </div>
+            <div class="more_item">
+              <a href=""><span>자세히보기</span></a>
+            </div>
+          </div>
+          <div class="item01">
+            <div class="imgBox">
+              <a href=""><img src="images/intro_din02.jpg" alt=""></a>
+            </div>
+            <div class="content">
+              <h2>다이닝</h2>
+              <p class="sub_head">탁트인 도심의 전경을 바로보며 세계 최고 수준의 셰프들이 직접 선보이는 다양한 요리를 즐기실 수 있습니다.</p>
+              <p class="sub_text">
+                - 멀티 미쉐린스타 세프 '야닉 알레노'가 운영하는 레스트랑 '스테이'<br>
+                - 한식의 새로운 빛깔, 미쉐린 1스타 코리안 퀴진 '비채나'<br>
+                - 국내 최대의 샴페인 셀렌션 프리미엄 바'바81'
+              </p>
+            </div>
+            <div class="more_item">
+              <a href=""><span>자세히보기</span></a>
+            </div>
+          </div>
+          <ul class="slick_dots">
+            <li class="slick_dots_item">
+              <button type="button" class="slick_dots_anchor">
+                <span class="slick_dots_num">1</span>
+              </button>
+            </li>
+            <li class="slick_dots_item">
+              <button type="button" class="slick_dots_anchor">
+                <span class="slick_dots_num">2</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="slideImgList">
+          <div class="item01">
+            <div class="imgBox">
+              <a href=""><img src="images/intro_wedding01.jpg" alt=""></a>
+            </div>
+            <div class="content">
+              <h2>웨딩&연회</h2>
+              <p class="sub_head">생애 최고의 경험을 제공하는 고품격 웨딩 및 가족모임은 물론 국제회의와 비즈니스 행사를 위한 맞춤식 공간을 연출할 수 있습니다.</p>
+              <p class="sub_text">
+                - 웅장한 층고(약8m)와 한강 조망이 돋보이는 세계 최고층 연회장(76F)
+                - 미쉐린 3스타 세프 야닌 알레노가 엄선한 연회 메뉴에
+                - 크리스틴 반타가 제안하는 최신 북미 트렌드의 웨딩 컨셉
+                - 자연채광에 최적화된 LED 스크린 및 특수조명 등의 최점단 장비 
+              </p>
+            </div>
+            <div class="more_item">
+              <a href=""><span>자세히보기</span></a>
+            </div>
+          </div>
+          <div class="item01">
+            <div class="imgBox">
+              <a href=""><img src="images/intro_spa02.jpg" alt=""></a>
+            </div>
+            <div class="content">
+              <h2>부대시설</h2>
+              <p class="sub_head">자연 채광과 스타이 뷰가 어우러진 친환경 분위기의 프레스티지 리프레싱존(Prestige Refreshing Zone)은 생활의 활력을 되찾아 드립니다.</p>
+              <p class="sub_text">
+                - 구름 위에서 즐기는 최고급 사우나와 호텔 헬스장 및 실내수영장<br>
+                - 서유렵 방식의 정교한 츠리트먼트 기술로 한 단계 높은 수준의 웰빙 경험을 제공하는 에비앙스파(Evian Spa)
+              </p>
+            </div>
+            <div class="more_item">
+              <a href=""><span>자세히보기</span></a>
+            </div>
+          </div>
+          <ul class="slick_dots">
+            <li class="slick_dots_item">
+              <button type="button" class="slick_dots_anchor">
+                <span class="slick_dots_num">1</span>
+              </button>
+            </li>
+            <li class="slick_dots_item">
+              <button type="button" class="slick_dots_anchor">
+                <span class="slick_dots_num">2</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <div class="info_inner">
+            <div class="info_inner_title">
+              <h2>호텔정보</h2>
+            </div>
+            <div class="info_content">
+              <p>호텔 에덴 객실 및 다이닝, 연회, 시설에 대한 자세한 정보를 확인하실 수 있습니다.</p>
+              <p>※ PDF 리더 프로그램이 없으신 분들은 Adobe acrobat viewer를 설치해 주시기 바랍니다.</p>
+            </div>
+            <div class="info_inner_button">
+              <a href="images/m_logo.png" download class="button_inner"><span>PDF 다운로드</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrap">
+        <h4>(주) 호텔에덴</h4>
+        <p>인천광역시 중구 영종해안남로 321길 186</p>
+        <p>Tel. <span>1833-8855</span> / E-mali. <span>ede3n@hotel.com</span></p>
+        <p>Copyright@HOTELEDEN Co. LTD. ALL rights reserved</p>
+        <div class="info">
+          <ul>
+            <li><a href="#">개인정보취급방침 &nbsp;|</a></li>
+            <li><a href="#">영상정보처리기기운영관리방침 &nbsp;| </a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/m_main.js"></script>
+</body>
+
+</html>

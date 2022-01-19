@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/m_reset.css">
+  <link rel="stylesheet" href="css/m_login.css">
+  <title>Mobile Login</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="btnArea">
+        <a class="close" onClick="history.back();"><img src="images/close.png" alt=""></a>
+        <h3>로그인</h3>
+      </div>
+      <p><span>호텔에덴</span>에 오신 것을 환영합니다.</p>
+    </div>
+    <div class="login_tab_menu">
+      <ul class="tab_list">
+        <li class="is_on">
+          <a href="#tab1" class="btn">회원</a>
+          <div id="tab1" class="cont">
+            <form id="form1" name="form1">
+              <div class="loginBox">
+                <div class="inp">
+                  <input type="text" id="user_id" name="user_id" maxlength="10" placeholder="아이디">
+                  <button class="bntDel">삭제</button>
+                </div>
+                <div class="inp">
+                  <input type="password" id="user_pwd" name="user_pwd" maxlength="15" placeholder="비밀번호">
+                  <button class="bntDel">삭제</button>
+                </div>
+                <div class="loginSave">
+                  <div class="checkbox">
+                    <input type="checkbox" id="loginchk" name="loginchk">
+                    <label for="check">
+                      로그인 상태 유지
+                    </label>
+                  </div>
+                </div>
+                <button type="button" class="btn btnFull btnlogin" onclick="userLogin();">로그인</button>
+                <p class="findpwd">
+                  <a href="">아이디/비밀번호 찾기</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li>
+          <a href="#tab2" class="btn">비회원 (예약확인)</a>
+          <div id="tab2" class="cont">
+            <form id="form2" name="form2">
+              <div class="loginBox">
+                <div class="inp">
+                  <input type="text" id="resno" name="resno" maxlength="15" placeholder="예약번호">
+                  <button class="bntDel">삭제</button>
+                </div>
+                <div class="inp">
+                  <input type="text" id="user_nm" name="user_nm" placeholder="이름">
+                  <button class="bntDel">삭제</button>
+                </div>
+                <div class="phone clesrFixed">
+                  <div class="ui_select_wrp">
+                    <select id="user_tel1" name="user_tel1" class="selectBox" title="핸드폰 첫째자리">
+                      <option value="010" selected="selected">010</option>
+                      <option value="011">011</option>
+                      <option value="016">016</option>
+                      <option value="017">017</option>
+                      <option value="018">018</option>
+                      <option value="019">019</option>
+                    </select>
+                    <!-- <div class="selectBox">
+                      <a href="#" class="ui_select_trigger">
+                        010
+                      </a>
+                      <ul class="ui_select_opts" style="display:none;">
+                        <li>
+                          <a href="#" class="ui_select_opt" data-value="010">010</a>
+                        </li>
+                        <li>
+                          <a href="#" class="ui_select_opt" data-value="010">011</a>
+                        </li>
+                        <li>
+                          <a href="#" class="ui_select_opt" data-value="010">016</a>
+                        </li>
+                        <li>
+                          <a href="#" class="ui_select_opt" data-value="010">017</a>
+                        </li>
+                        <li>
+                          <a href="#" class="ui_select_opt" data-value="010">018</a>
+                        </li>
+                        <li>
+                          <a href="#" class="ui_select_opt" data-value="010">019</a>
+                        </li>
+                      </ul>
+                    </div> -->
+                    <div class="inp">
+                      <input type="text" id="user_tel2" name="user_tel2" maxlength="4" title="핸드폰 가운데자리 입력">
+                      <button class="bntDel" style="display:none">삭제</button>
+                    </div>
+                    <div class="inp">
+                      <input type="text" id="user_tel3" name="user_tel3" maxlength="4" title="핸드폰 끝자리 입력">
+                      <button class="bntDel" style="display:none">삭제</button>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btnFull btnlogin disabled" onclick="nonMemberLogin();">예약내역조회</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="joinBoxWrp clesrFixed">
+      <div class="joinBox">
+        <p>회원가입으로 더 큰 혜택과 편리함을 누려보세요. <a href="" onclick="joinUs();">회원가입</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/m_login.js"></script>
+</body>
+</html>

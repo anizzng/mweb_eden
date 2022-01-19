@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/m_reset.css">
+  <link rel="stylesheet" href="css/m_style.css">
+  <title>HOTEL EDEN</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div id="logo">
+        <img src="images/m_logo.png" alt="">
+      </div>
+      <div class="bar_icon" onclick="openNav()">
+        <img src="images/menu.png" alt="">
+      </div>
+      <div id="mySidepanel" class="sidepanel">
+        <div class="toparea">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <div class="logincon">
+            <a href="" class="login">로그인</a>
+            <a href="" class="join">회원가입</a>
+          </div>
+          <a href="" class="reserv">예약조회</a>
+        </div>
+        <div class="midlearea1">
+          <div class="roomreserv">
+            <a href="">객실예약</a>
+            <form>
+              <input type="text" name="search" class="searchicon">
+            </form>
+            <!-- <a href="" class="iconarea"></a> -->
+          </div>
+        </div>
+        <div class="midlearea2">
+          <ul>
+            <li><a href="">호텔 에덴 소개</a></li>
+            <li><a href="">다이닝</a></li>
+            <li><a href="">부대시설</a></li>
+            <li><a href="">OFFERS</a></li>
+            <li><a href="">EVENTS</a></li>
+            <li><a href="">멤버십</a></li>
+          </ul>
+        </div>
+        <div class="gnb_foot">
+          <div class="botomarea1">
+            <div class="quick_site">
+              <a class="site_list" id="langOpt" onclick="langChose1()"><span>한국어</span></a>
+              <ul class="util_view lang_list">
+                <li><a href=""><span>English</span></a></li>
+                <li><a href=""><span>日本語</span></a></li>
+                <li><a href=""><span>中文</span></a></li>
+              </ul>
+              <a class="site_list lang" id="langOpt2" onclick="langChose2()"><span>KRW</span></a>
+              <ul class="util_view lang_list">
+                <li><a href=""><span>UAS(USD)</span></a></li>
+                <li><a href=""><span>日本(JPY)</span></a></li>
+                <li><a href=""><span>中國(CNY)</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="botomarea2">
+            <a href=""><span>호텔찾기</span></a>
+            <a href=""><span>호텔에덴소개</span></a>
+            <a href=""><span>고객센터</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="slideshow_container">
+        <div class="mySlides fade">
+          <img src="images/main_slide_01.jpg" alt="slide1">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/main_slide_02.jpg" alt="slide1">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/main_slide_03.jpg" alt="slide1">
+        </div>
+        <div class="mypos">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+      </div>
+      <div class="section_wrap">
+        <section class="section01">
+          <h1>객실</h1>
+          <p class="btnarea">
+            <a href="" class="btnMore">더보기</a>
+          </p>
+          <div class="swiper-container-sec01">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/room_01.jpg" alt="">
+                  <p class="imgInfo">프리미어 디럭스</p>
+                </div>
+              </div>
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/room_02.jpg" alt="">
+                  <p class="imgInfo">그랜드 디럭스 스위트</p>
+                </div>
+              </div>
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/room_03.jpg" alt="">
+                  <p class="imgInfo">로얄 스위트</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section02">
+          <h1>다이닝</h1>
+          <p class="btnarea">
+            <a href="" class="btnMore">더보기</a>
+          </p>
+          <div class="swiper-container-sec02">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/dining_01.jpg" alt="">
+                  <p class="imgInfo">ON THE PLATE</p>
+                </div>
+              </div>
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/dining_res_01.jpg" alt="">
+                  <p class="imgInfo">RAKU</p>
+                </div>
+              </div>
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/dining_04.jpg" alt="">
+                  <p class="imgInfo">RUBIK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section03">
+          <h1>부대시설</h1>
+          <p class="btnarea">
+            <a href="" class="btnMore">더보기</a>
+          </p>
+          <div class="swiper-container-sec03">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/amenit_01-1.jpg" alt="">
+                  <p class="imgInfo">피트니스</p>
+                </div>
+              </div>
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/amenit_02-1.jpg" alt="">
+                  <p class="imgInfo">아웃도어풀</p>
+                </div>
+              </div>
+              <div class="swiper-slide romSlides">
+                <div class="slideBox">
+                  <img src="images/amenit_03.jpg" alt="">
+                  <p class="imgInfo">스파</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section04">
+          <h1>OFFERS</h1>
+          <div class="numbertext">1 / 4</div>
+          <!-- <div class="numbertext">2 / 4</div>
+          <div class="numbertext">3 / 4</div>
+          <div class="numbertext">4 / 4</div> -->
+          <p class="btnarea">
+            <a href="" class="btnMore">더보기</a>
+          </p>
+          <div class="swiperWrap">
+            <div class="romSlides fade">
+              <img src="images/offers_01.jpg" alt="">
+              <div class="text_con">
+                <h4 class="title">올인클루시브 인 에덴</h4>
+                <span class="date">2021-08-09~2021-1130</span>
+                <p class="">안전하고 건강한 에덴에서의 완변한 치휴(治休)</p>
+                <span class="tag"># Breakfast# 15만 리조트머니# 씨메르# 원더박스</span>
+              </div>
+            </div>
+            <div class="romSlides fade">
+              <img src="images/offers_02.jpg" alt="">
+              <div class="text_con">
+                <h4 class="title">SUITE & RESORT MONEY</h4>
+                <span class="date">2021-09-24~2021-11-30</span>
+                <p class="">디럭스 스위트 전용 패키지 (Feat. 10만 리조트머니)</p>
+                <span class="tag"># Suite# 10만 리조트 머니# 온수풀# SKYPASS 적립가능</span>
+              </div>
+            </div>
+            <div class="romSlides fade">
+              <img src="images/offers_03.jpg" alt="">
+              <div class="text_con">
+                <h4 class="title">2 NIGHTS IN PARADISE</h4>
+                <span class="date">2021-03-18~2021-11-30</span>
+                <p class="">1박으로 부족한 파라다이스시티, 2박으로 더 여유롭고 풍성하게!</p>
+                <span class="tag"># 2박# 온수풀# 사우나</span>
+              </div>
+            </div>
+            <div class="romSlides fade">
+              <img src="images/offers_04.jpg" alt="">
+              <div class="text_con">
+                <h4 class="title">FAMILY FRIENDLY</h4>
+                <span class="date">2021-05-22~2021-11-27</span>
+                <p class="">온 가족이 함께 하는 해피 호캉스</p>
+                <span class="# 그랜드볼륨 가족 조식# 온수풀"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section05">
+          <h1>Events</h1>
+          <p class="btnarea">
+            <a href="" class="btnMore">더보기</a>
+          </p>
+          <div class="swiper-container-sec05">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide imgBox">
+                <div class="gallbox">
+                  <img src="images/event_01.jpg" alt="">
+                  <div class="text_con">
+                    <h4 class="title">개항로 in 파라다이스시티<br><br></h4>
+                    <p class="">라운지 파라타이스에서 만나는 끝맛 좋은 개항로 라거!</p>
+                </div>
+                </div>
+              </div>
+              <div class="swiper-slide imgBox">
+                <div class="gallbox">
+                  <img src="images/event_02.jpg" alt="">
+                  <div class="text_con">
+                    <h4 class="title">ENJOY FRESHLY BAKED PIZZA @HOME!</h4>
+                    <p class="">라스칼라의 화덕피자를 Take Out 으로 만나보세요!</p>
+                </div>
+                </div>
+              </div>
+              <div class="swiper-slide imgBox">
+                <div class="gallbox">
+                  <img src="images/event_03.jpg" alt="">
+                  <div class="text_con">
+                    <h4 class="title">HEALTHY AUTUMN CALIFORNIA WALNUT</h4>
+                    <p class="">파라다이스시티와 캘리포니아호두의 건강한 만남!</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section06">
+          <h1>MEMBERSHIP</h1>
+          <p class="btnarea">
+            <a href="" class="btnMore">더보기</a>
+          </p>
+          <div class="sec06Wrap">
+            <div class="memberImg">
+              <img src="images/member01.jpg" alt="">
+            </div>
+            <div class="memberImg">
+              <img src="images/member02.jpg" alt="">
+            </div>
+            <div class="memberImg">
+              <img src="images/member03.jpg" alt="">
+            </div>
+            <div class="memberImg">
+              <img src="images/member04.jpg" alt="">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrap">
+        <h4>(주) 호텔에덴</h4>
+        <p>인천광역시 중구 영종해안남로 321길 186</p>
+        <p>Tel. <span>1833-8855</span> / E-mali. <span>ede3n@hotel.com</span></p>
+        <p>Copyright@HOTELEDEN Co. LTD. ALL rights reserved</p>
+        <div class="info">
+          <ul>
+            <li><a href="#">개인정보취급방침 &nbsp;|</a></li>
+            <li><a href="#">영상정보처리기기운영관리방침 &nbsp;| </a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/m_main.js"></script>
+</body>
+
+</html>

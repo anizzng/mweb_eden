@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/m_reset.css">
+  <link rel="stylesheet" href="css/m_style.css">
+  <link rel="stylesheet" href="css/m_common.css">
+  <link rel="stylesheet" href="css/m_guest_room.css">
+  <title>HOTEL EDEN</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="navbar">
+      <div id="logo">
+        <a href="index.html"><img src="images/m_logo.png" alt=""></a>
+      </div>
+      <div class="bar_icon" onclick="openNav()">
+        <img src="images/menu.png" alt="">
+      </div>
+      <div id="mySidepanel" class="sidepanel">
+        <div class="toparea">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <div class="logincon">
+            <a href="m_login.html" class="login">로그인</a>
+            <a href="#" class="join" onclick="joinUs();">회원가입</a>
+          </div>
+          <a href="" class="reserv">예약조회</a>
+        </div>
+        <div class="midlearea1">
+          <div class="roomreserv">
+            <a href="m_guest_room.html">객실예약</a>
+            <form>
+              <input type="text" name="search" class="searchicon">
+            </form>
+            <!-- <a href="" class="iconarea"></a> -->
+          </div>
+        </div>
+        <div class="midlearea2">
+          <ul>
+            <li><a href="m_introduce.html">호텔 에덴 소개</a></li>
+            <li><a href="m_dining.html">다이닝</a></li>
+            <li><a href="#">부대시설</a></li>
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">멤버십</a></li>
+          </ul>
+        </div>
+        <div class="gnb_foot">
+          <div class="botomarea1">
+            <div class="quick_site">
+              <a class="site_list" id="langOpt" onclick="langChose1()"><span>한국어</span></a>
+              <ul class="util_view lang_list">
+                <li><a href="#"><span>English</span></a></li>
+                <li><a href="#"><span>日本語</span></a></li>
+                <li><a href="#"><span>中文</span></a></li>
+              </ul>
+              <a class="site_list lang" onclick="langChose2()"><span>KRW</span></a>
+              <ul class="util_view lang_list">
+                <li><a href="#"><span>UAS(USD)</span></a></li>
+                <li><a href="#"><span>日本(JPY)</span></a></li>
+                <li><a href="#"><span>中國(CNY)</span></a></li> 
+              </ul>
+            </div>
+          </div>
+          <div class="botomarea2">
+            <a href="#"><span>호텔찾기</span></a>
+            <a href="m_introduce.html"><span>호텔에덴소개</span></a>
+            <a href="#"><span>고객센터</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="back_link">
+        <button type="button" onclick="history.back();"></button>
+      </div>
+      <div class="conWrap">
+        <div class="inner_h1">
+          <h1>객실</h1>
+        </div>
+        <div class="inner_Text">
+          <p>잠실에서 바라보는 서울 시내의 환상적인 전망이 어우러진 시그니엘 서울의 
+            최고급 호텔 사우나, 헬스장, 실내 수영장은 새로운 힐링과 활력의 시간을 제안합니다. 
+            또한 한국 최초의 에비앙 스파는 프리미엄 수분공급을 통해 심신을 치유하는 
+            에비앙 스파만의 특별한 트리트먼트를 제공합니다. 투숙객 전용 라운지에서는 
+            한강 전망을 바라보며 티 타임을 즐기실 수 있습니다.
+          </p>
+        </div>
+        <ul class="room_list">
+          <li class="room">
+            <div class="slideImgList">
+              <div class="swiper-container">
+                <div class="swiper-wrapper item01">
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room01.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room01-1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="room_content">
+                <div class="room_inside">
+                  <span>그랜드 디럭스</span>
+                  <h2>그랜드 디럭스 룸</h2>
+                </div>
+                <div class="room_info">
+                  <div class="room_info_item">
+                    <strong class="room_info_title">침대타입</strong>
+                    <span class="room_info_text">더블</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">전망</strong>
+                    <span class="room_info_text">시티뷰 / 리버뷰 / 전망욕실</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">투숙입원</strong>
+                    <span class="room_info_text">2명</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">객실면적</strong>
+                    <span class="room_info_text">40~50m²</span>
+                  </div>
+                </div>
+                <a href="#" class="room_button"><span>요금조회</span></a>
+              </div>
+            </div>
+          </li>
+          <li class="room">
+            <div class="slideImgList">
+              <div class="swiper-container2">
+                <div class="swiper-wrapper item01">
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room02.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room02-1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="room_content">
+                <div class="room_inside">
+                  <span>프리미어</span>
+                  <h2>프리미어 룸</h2>
+                </div>
+                <div class="room_info">
+                  <div class="room_info_item">
+                    <strong class="room_info_title">침대타입</strong>
+                    <span class="room_info_text">더블/트윈</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">전망</strong>
+                    <span class="room_info_text">시티뷰 / 리버뷰 / 전망욕실</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">투숙입원</strong>
+                    <span class="room_info_text">2명</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">객실면적</strong>
+                    <span class="room_info_text">46~60m²</span>
+                  </div>
+                </div>
+                <a href="#" class="room_button"><span>요금조회</span></a>
+              </div>
+            </div>
+          </li>
+          <li class="room">
+            <div class="slideImgList">
+              <div class="swiper-container3">
+                <div class="swiper-wrapper item01">
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room03.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room03-1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="room_content">
+                <div class="room_inside">
+                  <span>에덴 프리미어</span>
+                  <h2>에덴 프리미어 룸</h2>
+                </div>
+                <div class="room_info">
+                  <div class="room_info_item">
+                    <strong class="room_info_title">침대타입</strong>
+                    <span class="room_info_text">더블/트윈</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">전망</strong>
+                    <span class="room_info_text">시티뷰 / 전망욕실 / 리버뷰 및 전망욕실</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">투숙입원</strong>
+                    <span class="room_info_text">2명</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">객실면적</strong>
+                    <span class="room_info_text">56~65m²</span>
+                  </div>
+                </div>
+                <a href="#" class="room_button"><span>요금조회</span></a>
+              </div>
+            </div>
+          </li>
+          <li class="room">
+            <div class="slideImgList">
+              <div class="swiper-container4">
+                <div class="swiper-wrapper item01">
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room04.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room04-1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="room_content">
+                <div class="room_inside">
+                  <span>스위트</span>
+                  <h2>디럭스 스위트 룸</h2>
+                </div>
+                <div class="room_info">
+                  <div class="room_info_item">
+                    <strong class="room_info_title">침대타입</strong>
+                    <span class="room_info_text">더블/트윈</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">전망</strong>
+                    <span class="room_info_text">시티뷰</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">투숙입원</strong>
+                    <span class="room_info_text">2명</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">객실면적</strong>
+                    <span class="room_info_text">59~73m²</span>
+                  </div>
+                </div>
+                <a href="#" class="room_button"><span>요금조회</span></a>
+              </div>
+            </div>
+          </li>
+          <li class="room">
+            <div class="slideImgList">
+              <div class="swiper-container5">
+                <div class="swiper-wrapper item01">
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room05.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room05-1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="room_content">
+                <div class="room_inside">
+                  <span>스위트</span>
+                  <h2>프리미어 스위트 룸</h2>
+                </div>
+                <div class="room_info">
+                  <div class="room_info_item">
+                    <strong class="room_info_title">침대타입</strong>
+                    <span class="room_info_text">더블/트윈</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">전망</strong>
+                    <span class="room_info_text">시티뷰</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">투숙입원</strong>
+                    <span class="room_info_text">2명</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">객실면적</strong>
+                    <span class="room_info_text">70~86m²</span>
+                  </div>
+                </div>
+                <a href="#" class="room_button"><span>요금조회</span></a>
+              </div>
+            </div>
+          </li>
+          <li class="room">
+            <div class="slideImgList">
+              <div class="swiper-container6">
+                <div class="swiper-wrapper item01">
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room06.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide imgBox">
+                    <img src="images/g_room06-1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="room_content">
+                <div class="room_inside">
+                  <span>프리미어</span>
+                  <h2>코리안 프리미어 룸</h2>
+                </div>
+                <div class="room_info">
+                  <div class="room_info_item">
+                    <strong class="room_info_title">침대타입</strong>
+                    <span class="room_info_text">더블</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">전망</strong>
+                    <span class="room_info_text">리버뷰 및 전망욕실</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">투숙입원</strong>
+                    <span class="room_info_text">2명</span>
+                  </div>
+                  <div class="room_info_item">
+                    <strong class="room_info_title">객실면적</strong>
+                    <span class="room_info_text">40m²</span>
+                  </div>
+                </div>
+                <a href="#" class="room_button"><span>요금조회</span></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="msg_wrap">
+          <p class="msg">
+            객실요금은 오늘 기준의 1박 최저가 금액이며 예약하시는 날짜에 따라 다를 수 있습니다.
+          </p>
+          <p class="msg">
+            객실이 이미 판매 되었거나, 유선예약의 경우 요금이 조회되지 않습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrap">
+        <h4>(주) 호텔에덴</h4>
+        <p>인천광역시 중구 영종해안남로 321길 186</p>
+        <p>Tel. <span>1833-8855</span> / E-mali. <span>ede3n@hotel.com</span></p>
+        <p>Copyright@HOTELEDEN Co. LTD. ALL rights reserved</p>
+        <div class="info">
+          <ul>
+            <li><a href="#">개인정보취급방침 &nbsp;|</a></li>
+            <li><a href="#">영상정보처리기기운영관리방침 &nbsp;| </a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/m_main.js"></script>
+  <script src="js/m_guestroom.js"></script>
+</body>
+
+</html>
